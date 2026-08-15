@@ -115,7 +115,7 @@ The word-generator panel — Cycle / Burst / Step / Reset / Set, Internal & Exte
 
 Computes `S = A + B` for two 2-bit operands. Built from half-/full-adder cells: **XOR** gates generate the sum bits, while **AND / OR** gates generate and propagate the carry. The word generator sweeps the inputs and the summed value appears on the output display. A 2-bit + 2-bit sum needs up to **3 bits** (max `3 + 3 = 6`).
 
-### ➖ Subtractor ✅ *(confirmed working)*
+### ➖ Subtractor 
 
 ![2-bit subtractor gate-level sub-circuit](02-subtractor.jpg)
 
