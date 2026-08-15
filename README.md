@@ -1,12 +1,11 @@
 # 2-Bit Multi-Functional Digital Computer
-
-![The complete 2-bit computer datapath simulated in NI Multisim](00-top-level-computer.jpg)
-
 A **2-Bit Multi-Functional Digital Computer** designed and simulated in **NI Multisim**, primarily using **basic digital logic gates and fundamental digital circuits**.
 
 The main purpose of this project is **educational**: to understand how an **Arithmetic Logic Unit (ALU), datapath, control signals, arithmetic circuits, timing, and digital outputs** work at the gate level.
 
 Although the system is only 2-bit, the fundamental concepts provide a useful foundation for understanding how similar principles scale into the much more complex **ALUs and datapaths used in modern 64-bit processors**.
+
+![The complete 2-bit computer datapath simulated in NI Multisim](00-top-level-computer.jpg)
 
 ---
 
@@ -307,34 +306,6 @@ This project focuses on the **fundamental principles underneath those abstractio
 
 ---
 
-## 📁 Project Structure
-
-A typical repository structure can be organized as:
-
-```text
-multism/
-│
-├── README.md
-│
-├── Documentation/
-│   └── screenshots/
-│       ├── 00-top-level-computer.jpg   # full 2-bit computer datapath
-│       ├── 01-adder.jpg
-│       ├── 02-subtractor.jpg
-│       ├── 03-multiplier.jpg
-│       ├── 04-divider.jpg
-│       └── 05-comparator.jpg
-│
-├── Multisim/                           # ← place the .ms14 project file(s) here
-│   └── 2 BIT COMPUTER.ms14
-│
-└── tools/                              # helper scripts for .ms14 binary inspection
-    ├── analyze.py                      # header / zlib probing of an .ms14 file
-    ├── analyze2.py
-    ├── analyze3.py
-    ├── blast.py                        # PKWARE DCL "explode" decompressor (Python port)
-    └── dcl_codec.py
-```
 
 > The `tools/` scripts currently live in the project root; move them into `tools/` if you want the layout above. The Multisim project file is not yet committed — add it under `Multisim/` so the screenshots and source stay together.
 
