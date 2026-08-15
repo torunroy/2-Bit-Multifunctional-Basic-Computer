@@ -130,7 +130,7 @@ Computes `P = A × B`. **AND** gates form the partial products (`Aᵢ · Bⱼ`),
 
 ### ➗ Divider
 
-![2-bit divider gate-level sub-circuit](screenshots/04-divider.jpg)
+![2-bit divider gate-level sub-circuit](04-divider.jpg)
 
 Computes `A ÷ B`, producing a **quotient** and a **remainder** on two separate seven-segment displays. Implemented as a combinational gate network over the 2-bit operands (division-by-zero is the boundary case to watch).
 
@@ -350,13 +350,13 @@ The emphasis is on understanding the relationship between:
 
 ---
 
-## 🙏 Acknowledgement
+## Acknowledgement
 
 Special thanks to **Vaidehi Ghime** for the guidance, support, and valuable learning resources throughout this project.
 
 ---
 
-## 📌 Project Summary
+## Project Summary
 
 > **Starting with 2 bits to understand the fundamental principles behind modern processor design.**
 
@@ -364,9 +364,9 @@ The project demonstrates that complex computing systems ultimately depend on fun
 
 ---
 
-## 👤 Author
+## Author
 
-**Torun**
+**Torun Roy**
 
 Digital Logic | Computer Architecture | Hardware & Embedded Systems
 
