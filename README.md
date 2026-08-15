@@ -1,6 +1,6 @@
 # 2-Bit Multi-Functional Digital Computer
 
-![The complete 2-bit computer datapath simulated in NI Multisim](Documentation/screenshots/00-top-level-computer.jpg)
+![The complete 2-bit computer datapath simulated in NI Multisim](00-top-level-computer.jpg)
 
 A **2-Bit Multi-Functional Digital Computer** designed and simulated in **NI Multisim**, primarily using **basic digital logic gates and fundamental digital circuits**.
 
@@ -95,7 +95,7 @@ All screenshots below are captured live from the **NI Multisim** simulation. Eac
 
 ### 🖥️ Top-Level Datapath — *2 BIT COMPUTER*
 
-![Complete 2-bit computer datapath simulated in Multisim](Documentation/screenshots/00-top-level-computer.jpg)
+![Complete 2-bit computer datapath simulated in Multisim](00-top-level-computer.jpg)
 
 The integration layer that ties every module together. A single **Word Generator (XWG1)** broadcasts the operand bits (`A1 A0`, `B1 B0`) to all functional blocks at once, and each block drives its own seven-segment output:
 
@@ -112,31 +112,31 @@ The word-generator panel — Cycle / Burst / Step / Reset / Set, Internal & Exte
 
 ### ➕ Adder
 
-![2-bit adder gate-level sub-circuit](Documentation/screenshots/01-adder.jpg)
+![2-bit adder gate-level sub-circuit](01-adder.jpg)
 
 Computes `S = A + B` for two 2-bit operands. Built from half-/full-adder cells: **XOR** gates generate the sum bits, while **AND / OR** gates generate and propagate the carry. The word generator sweeps the inputs and the summed value appears on the output display. A 2-bit + 2-bit sum needs up to **3 bits** (max `3 + 3 = 6`).
 
 ### ➖ Subtractor ✅ *(confirmed working)*
 
-![2-bit subtractor gate-level sub-circuit](Documentation/screenshots/02-subtractor.jpg)
+![2-bit subtractor gate-level sub-circuit](02-subtractor.jpg)
 
 Computes `D = A − B`. A full-subtractor network — **XOR** gates for the difference bits and **NOT + AND / OR** for the borrow chain — produces the difference together with a borrow / **sign** indication on a separate display. This is the module verified end-to-end in simulation.
 
 ### ✖️ Multiplier
 
-![2-bit multiplier gate-level sub-circuit](Documentation/screenshots/03-multiplier.jpg)
+![2-bit multiplier gate-level sub-circuit](03-multiplier.jpg)
 
 Computes `P = A × B`. **AND** gates form the partial products (`Aᵢ · Bⱼ`), which are then summed by adder gates to build the final product. A 2-bit × 2-bit product needs up to **4 bits** (max `3 × 3 = 9`).
 
 ### ➗ Divider
 
-![2-bit divider gate-level sub-circuit](Documentation/screenshots/04-divider.jpg)
+![2-bit divider gate-level sub-circuit](screenshots/04-divider.jpg)
 
 Computes `A ÷ B`, producing a **quotient** and a **remainder** on two separate seven-segment displays. Implemented as a combinational gate network over the 2-bit operands (division-by-zero is the boundary case to watch).
 
 ### 🔍 Comparator
 
-![2-bit magnitude comparator gate-level sub-circuit](Documentation/screenshots/05-comparator.jpg)
+![2-bit magnitude comparator gate-level sub-circuit](05-comparator.jpg)
 
 A 2-bit **magnitude comparator**. Bit-equality is tested with **XOR / XNOR** gates, and an **AND / OR** network resolves the three mutually-exclusive outcomes `A > B`, `A = B`, and `A < B`, which drive the COMPARE display.
 
@@ -258,7 +258,7 @@ This project helped develop practical understanding of:
 * Basic Computer Architecture
 
 ---
-
+![The complete 2-bit computer datapath simulated in NI Multisim](00-top-level-computer.jpg)
 ## 🔬 Why 2-Bit?
 
 The goal was **not performance or scalability**.
