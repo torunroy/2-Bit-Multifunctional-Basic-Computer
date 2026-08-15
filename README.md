@@ -48,7 +48,7 @@ Digital Display
 ### ALU & Processing
 
 * Addition
-* Subtraction **(working)**
+* Subtraction 
 * Multiplication
 * Division
 * Comparator
