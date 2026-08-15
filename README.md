@@ -258,7 +258,7 @@ This project helped develop practical understanding of:
 * Basic Computer Architecture
 
 ---
-![The complete 2-bit computer datapath simulated in NI Multisim](00-top-level-computer.jpg)
+![The complete 2-bit computer datapath Run Time simulated in NI Multisim](DEMO.mp4)
 ## 🔬 Why 2-Bit?
 
 The goal was **not performance or scalability**.
