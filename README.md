@@ -293,7 +293,7 @@ This project focuses on the **fundamental principles underneath those abstractio
 ### Working
 
 * Basic arithmetic processing
-* **Subtraction**
+* Subtraction
 * Internal digital display
 * Input/word generation
 * Control and timing experimentation
